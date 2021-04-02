@@ -82,49 +82,49 @@ const Expenditure: React.FC = () => {
                             <TableRow>
                                 <TableCell>家賃</TableCell>
                                 <TableCell>
-                                    <span><input type="text" inputMode="numeric" id="rent" value={rent.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setRent, setIsNum_validation_rent)}/>円</span>
+                                    <span><input type="text" inputMode="numeric" id="rent" className="expenditure-input" value={rent.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setRent, setIsNum_validation_rent)}/>円</span>
                                     { IsNum_validation_rent && <p className="validation-text">半角数字を入力してください</p> }
                                 </TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell>食費</TableCell>
                                 <TableCell>
-                                    <span><input type="text" inputMode="numeric" id="foodExpenses" value={foodExepnses.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setFoodExpenses, setIsNum_validation_foodExepnses)}/>円</span>
+                                    <span><input type="text" inputMode="numeric" id="foodExpenses" className="expenditure-input" value={foodExepnses.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setFoodExpenses, setIsNum_validation_foodExepnses)}/>円</span>
                                     { IsNum_validation_foodExepnses && <p className="validation-text">半角数字を入力してください</p> }
                                 </TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell>水道・光熱費</TableCell>
                                 <TableCell>
-                                    <span><input type="text" inputMode="numeric" id="waterAndUtilityCosts" value={waterAndUtilityCosts.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setWaterAndUTilityCosts, setIsNum_validation_waterAndUtilityCosts)}/>円</span>
+                                    <span><input type="text" inputMode="numeric" id="waterAndUtilityCosts" className="expenditure-input" value={waterAndUtilityCosts.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setWaterAndUTilityCosts, setIsNum_validation_waterAndUtilityCosts)}/>円</span>
                                     { IsNum_validation_waterAndUtilityCosts && <p className="validation-text">半角数字を入力してください</p> }
                                 </TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell>交通・通信費</TableCell>
                                 <TableCell>
-                                    <span><input type="text" inputMode="numeric" id="communicationCosts" value={communicationCosts.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setCommunicationCosts, setIsNum_validation_communicationCosts)}/>円</span>
+                                    <span><input type="text" inputMode="numeric" id="communicationCosts" className="expenditure-input" value={communicationCosts.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setCommunicationCosts, setIsNum_validation_communicationCosts)}/>円</span>
                                     { IsNum_validation_communicationCosts && <p className="validation-text">半角数字を入力してください</p> }
                                 </TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell>消耗品費</TableCell>
                                 <TableCell>
-                                    <span><input type="text" inputMode="numeric" id="suppliesExpenses" value={suppliesExpenses.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setSuppliesExpenses, setIsNum_validation_suppliesExpenses)}/>円</span>
+                                    <span><input type="text" inputMode="numeric" id="suppliesExpenses" className="expenditure-input" value={suppliesExpenses.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setSuppliesExpenses, setIsNum_validation_suppliesExpenses)}/>円</span>
                                     { IsNum_validation_suppliesExpenses && <p className="validation-text">半角数字を入力してください</p> }
                                 </TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell>交際費</TableCell>
                                 <TableCell>
-                                    <span><input type="text" inputMode="numeric" id="entertainmentExpenses" value={entertainmentExpenses.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setEntertainmentExpenses, setIsNum_validation_entertainmentExpenses)}/>円</span>
+                                    <span><input type="text" inputMode="numeric" id="entertainmentExpenses" className="expenditure-input" value={entertainmentExpenses.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setEntertainmentExpenses, setIsNum_validation_entertainmentExpenses)}/>円</span>
                                     { IsNum_validation_entertainmentExpenses && <p className="validation-text">半角数字を入力してください</p> }
                                 </TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell>その他</TableCell>
                                 <TableCell>
-                                    <span><input type="text" inputMode="numeric" id="otherCosts" value={otherCosts.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setOtherCosts, setIsNum_validation_otherCosts)}/>円</span>
+                                    <span><input type="text" inputMode="numeric" id="otherCosts" className="expenditure-input" value={otherCosts.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setOtherCosts, setIsNum_validation_otherCosts)}/>円</span>
                                     { IsNum_validation_otherCosts && <p className="validation-text">半角数字を入力してください</p> }
                                 </TableCell>
                             </TableRow>
