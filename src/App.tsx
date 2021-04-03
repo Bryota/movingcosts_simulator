@@ -10,8 +10,8 @@ const App: React.FC = () => {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Top} />
-        <Route path="/movingcost" exact component={MovingCostindex} />
-        <Route path="/monthlycost" exact component={Monthlyindex} />
+        <Route path="/movingcost"  component={MovingCostindex} />
+        <Route path="/monthlycost"  component={Monthlyindex} />
       </Switch>
     </BrowserRouter>
   )

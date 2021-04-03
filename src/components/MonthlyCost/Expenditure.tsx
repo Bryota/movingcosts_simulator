@@ -76,6 +76,7 @@ const Expenditure: React.FC = () => {
         }
         return (
             <div>
+                <h3>毎月の出費</h3>
                 <TableContainer component={Paper} className="table">
                     <Table>
                         <TableBody>
@@ -135,7 +136,7 @@ const Expenditure: React.FC = () => {
                     <Button className="button" variant="contained" onClick={setAverageData}>平均を使用する</Button>
                 </div>
                 <div>
-                    <Button className="button" variant="contained" onClick={sendExpenditureToStore}>送信</Button>
+                    <Button className="button" variant="contained" color="primary" onClick={sendExpenditureToStore}>送信</Button>
                 </div>
             </div>
         )

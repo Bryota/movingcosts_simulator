@@ -16,11 +16,12 @@ const InitialCost: React.FC = () => {
         <div>
             <form onSubmit={sendInitialCostToStore}>
                 <div>
+                    <h3>用意できる初期費用</h3>
                     <label className="label" htmlFor="income">用意できる初期費用</label>
                     <span><input type="text" inputMode="numeric" id="income" value={initialCost.toLocaleString()} onChange={(e) => { CheckAndSetValue(+e.target.value.replace(/,/g, ''), setInitialCost, setIsNum_validation)}} />円</span>
                     { IsNum_validation && <p className="validation-text">半角数字を入力してください</p> }
                 </div>
-                <Button className="button" variant="contained" type="submit">送信</Button>
+                <Button className="button" variant="contained" color="primary" type="submit">送信</Button>
             </form>
         </div>
         </>

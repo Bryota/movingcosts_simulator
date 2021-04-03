@@ -6,7 +6,7 @@ const Top: React.FC = () => {
     return (
         <>
         <div className="app">
-            <h1 className="title">引っ越し費用シュミレーター</h1>
+            <h1 className="title">引っ越し費用シミュレーター</h1>
             <div className="top-wrap">
                 <Button variant="contained">
                     <Link to="/movingcost">初期予算計算</Link>

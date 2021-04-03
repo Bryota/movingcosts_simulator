@@ -13,8 +13,8 @@ export const Result: React.FC = () => {
     return (
         <>
             <h3>合計の計算</h3>
-            <p>想定初期費用：{initialCost.toLocaleString()}円</p>
-            <p>実初期費用：{calculatedInitialCost.toLocaleString()}円</p>
+            <p>用意できる初期費用：{initialCost.toLocaleString()}円</p>
+            <p>想定される初期費用：{calculatedInitialCost.toLocaleString()}円</p>
             {(() => {
                 if (balance >= 0) {
                     return <p>差額：{balance.toLocaleString()}円</p>

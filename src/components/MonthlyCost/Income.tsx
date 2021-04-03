@@ -14,13 +14,14 @@ const Income: React.FC = () => {
     }
     return (
         <div>
+            <h3>毎月の収入</h3>
             <form onSubmit={sendIncomeToStore}>
                 <div>
                     <label htmlFor="income" className="label">収入</label>
                     <span><input type="text" inputMode="numeric" id="income" value={income?.toLocaleString()} onChange={e => CheckAndSetValue(+e.target.value.replace(/,/g, ''), setIncome, setIsNum_validation_income)} />円</span>
                     { IsNum_validation_income && <p className="validation-text">半角数字を入力してください</p> }
                 </div>
-                <Button className="button" variant="contained" type="submit">送信</Button>
+                <Button className="button mb-30" variant="contained" color="primary" type="submit">送信</Button>
             </form>
         </div>
     )

@@ -8,7 +8,7 @@ import CalculatedInitialCost from './CalculatedInitialCost';
 const MovingCostindex: React.FC = () => {
     return (
     <div className="app">
-      <h1 className="title">引っ越し費用シュミレーター</h1>
+      <h1 className="title">引っ越し費用シミュレーター</h1>
       <Container maxWidth="sm">
         <h2>引っ越し初期費用の計算</h2>
         <InitialCost />

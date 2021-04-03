@@ -165,7 +165,7 @@ const Furniture: React.FC = () => {
                     </TableBody>
                 </Table>
             </TableContainer>
-            <Button className="button" variant="contained" onClick={sendFurnitureCostToStore}>計算</Button>
+            <Button className="button" variant="contained" onClick={sendFurnitureCostToStore}>家具の計算</Button>
             <p>家具の合計金額：{totalFurnitureCost.toLocaleString()}円</p>
         </>
     )

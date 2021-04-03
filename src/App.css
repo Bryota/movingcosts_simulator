@@ -2,6 +2,10 @@
   margin-top: 50px;
 }
 
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
 .alert {
   color: red;
 }
@@ -63,18 +67,18 @@
 
 .table {
   margin: 0 auto;
-  width: 85% !important;
+  width: 90% !important;
 }
 
 .select-input {
   margin: 0 auto;
-  width: 85%;
+  width: 90%;
 }
 
 .items {
   text-align: left;
   margin: 0 auto;
-  width: 85%;
+  width: 90%;
 }
 
 .item {
@@ -89,5 +93,5 @@
 
 .expenditure-input {
   display: inline-block;
-  width: 85%;
+  width: 75%;
 }
